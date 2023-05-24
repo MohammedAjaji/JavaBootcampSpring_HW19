@@ -31,4 +31,5 @@ public class Blog {
 
     @Column(columnDefinition = "bool default false")
     private Boolean isPublished = false;
+
 }
