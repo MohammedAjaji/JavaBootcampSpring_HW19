@@ -29,6 +29,6 @@ public class Blog {
     @Column(columnDefinition = "varchar(300) not null")
     private String body;
 
-    @Column(columnDefinition = "boolean default false")
-    private Boolean isPublished;
+    @Column(columnDefinition = "bool default false")
+    private Boolean isPublished = false;
 }
