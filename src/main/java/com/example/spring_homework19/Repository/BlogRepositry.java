@@ -17,6 +17,4 @@ public interface BlogRepositry extends JpaRepository<Blog, Integer> {
 
     List<Blog> findAllByCategory(String category);
 
-
-
 }
