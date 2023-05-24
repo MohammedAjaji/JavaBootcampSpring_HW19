@@ -64,4 +64,10 @@ public class BlogController {
         blogService.publishBlog(id);
         return ResponseEntity.status(200).body("Blog has been published :)");
     }
+
+    @PutMapping("unpublish/{id}")
+    public ResponseEntity unpublishBlog(@PathVariable Integer id){
+        blogService.unPublishBlog(id);
+        return ResponseEntity.status(200).body("Blog has been unpublished :)");
+    }
 }
